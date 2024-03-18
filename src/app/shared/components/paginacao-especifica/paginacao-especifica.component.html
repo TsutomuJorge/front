@@ -1,0 +1,7 @@
+<form [formGroup]="paginacaoEspecificaForm" style="margin-top: 0px;">
+    <div class="ajustarInputPaginacao">
+        Ir para pág:
+        <input id="procurar-por-input" class="inputPaginacao" (keypress)="validarPagina($event.charCode)" maxlength="4"
+            formControlName="paginaCtrl" />
+    </div>
+</form>

@@ -1,0 +1,6 @@
+<div class="registros-por-pagina">
+    <select id="registros-por-pagina-select" [(ngModel)]="registrosPorPagina" (change)="onChangePageSize()">
+        <option *ngFor="let i of totalRegistrosPagina">{{ i }}</option>
+    </select>
+    linhas por página
+</div>

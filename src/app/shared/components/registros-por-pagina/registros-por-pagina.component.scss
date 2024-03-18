@@ -1,0 +1,21 @@
+.registros-por-pagina {
+    margin-top: -7px;
+    transform: translateY(-14px);
+    color: rgba(0, 0, 0, 0.54)!important;
+    font-size: 13px!important;
+    width: 300px;
+}
+
+#registros-por-pagina-select {
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-radius: 0;
+    margin-right: 2px;
+    color: rgba(0, 0, 0, 0.54)!important;
+    border-color: inherit!important;
+}
+
+#registros-por-pagina-select:focus {
+    outline: 0;
+}

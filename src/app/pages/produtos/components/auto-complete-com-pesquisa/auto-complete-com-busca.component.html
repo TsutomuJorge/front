@@ -1,0 +1,10 @@
+<mat-form-field class="example-full-width">
+  <mat-label>{{label}}</mat-label>
+  <input type="text" placeholder="Escolha um" aria-label="Número" matInput [formControl]="formControl"
+    [matAutocomplete]="auto">
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let option of valores" [value]="option" trackBy="id">
+      {{option}}
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>

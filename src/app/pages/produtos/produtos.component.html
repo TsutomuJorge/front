@@ -1,0 +1,20 @@
+<div class="produto-style">
+  <app-anexar-arquivo (regarregarTela)="importarArquivo($event)"></app-anexar-arquivo>
+  <app-adicionar-produto></app-adicionar-produto>
+</div>
+<div *ngIf="habilitarExportacao" class="produto-style" style="margin-bottom: 1rem;">
+  <button mat-raised-button color="primary" (click)="exportarLinhasPreenchidas()">Exportar Linhas Preenchidas para
+    CSV</button>
+</div>
+
+<div class="content" style="width: 100%; height: 50vh;">
+  <ag-grid-angular style="width: 100%; height: 100%;" [class]="themeClass" [gridOptions]="gridOptions"
+    [rowData]="rowData" [columnDefs]="colDefs" [localeText]="localeText" [defaultColDef]="defaultColDef"
+    [getRowId]="getRowId" (cellEditingStopped)="onCellValueChanged($event)" [pagination]="true"
+    (gridReady)="onGridReady($event)">
+  </ag-grid-angular>
+</div>
+
+<div *ngIf="loading">
+  <app-loading />
+</div>

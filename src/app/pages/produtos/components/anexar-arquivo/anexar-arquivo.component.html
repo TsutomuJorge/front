@@ -1,0 +1,22 @@
+<mat-card style="border: 1px solid #dfdfdf; width: 650px; margin-bottom: 1rem;">
+  <mat-card-header>
+    <mat-card-title style="font-size: 1rem;">Importar planilha</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="anexar-imagem">
+      <div class="file-drop-area">
+        <mat-icon style="color:#008CDC; margin-right:10px ;">attach_file</mat-icon><span class="file-mensagem">Arraste e
+          solte
+          seu arquivo ou <u class="link-selecao">selecione</u></span>
+        <input id="fileInput" class="file-input" type="file" multiple value="" title=" " (change)="mudarArquivo($event)"
+          accept="application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, .xlsm">
+      </div>
+      <div style="margin-left: 1rem;">
+        <button mat-raised-button color="primary" (click)="onArquivoSelecionado($event)">Importar arquivo</button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+<div *ngIf="loading">
+  <app-loading />
+</div>

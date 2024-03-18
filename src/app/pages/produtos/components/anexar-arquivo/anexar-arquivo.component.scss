@@ -1,0 +1,72 @@
+.anexar-imagem {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.mat-chip.mat-standard-chip {
+  background-color: #e0e0e0;
+  color: rgba(0, 0, 0, .87);
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.arquivoDownload {
+  color: #008CDC !important;
+  font-size: 13px !important;
+  height: auto;
+}
+
+.arquivoLabel {
+  color: #8d8f9a !important;
+  cursor: default !important;
+  font-size: 13px !important;
+  height: auto;
+}
+
+.file-drop-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  max-width: 100%;
+  padding: 25px;
+  margin-left: 15px;
+  border: 1px dashed #008CDC;
+  border-radius: 3px;
+  transition: 0.2s;
+  font-size: 14px !important;
+}
+
+.file-mensagem {
+  font-weight: 300;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #008CDC;
+}
+
+.file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.link-selecao {
+  color: #f1661f !important;
+}
+
+::ng-deep .mat-chip-list-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  align-items: baseline !important;
+  margin-left: 10px !important;
+  width: max-content !important;
+  margin-top: 15px !important;
+  max-width: 100%;
+}
